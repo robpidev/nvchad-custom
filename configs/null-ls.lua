@@ -5,7 +5,7 @@ if not present then
 end
 
 local b = null_ls.builtins
-local lint = null_ls.builtins.diagnostics
+-- local lint = null_ls.builtins.diagnostics
 
 local sources = {
 
@@ -23,7 +23,7 @@ local sources = {
   b.formatting.rustfmt,
 
   -- python
-  lint.pylint,
+  -- lint.pylint,
 }
 
 null_ls.setup {
