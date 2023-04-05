@@ -40,20 +40,7 @@ M.nvimtree = {
 
   renderer = {
     highlight_git = true,
-    add_trailing = true,
-    indent_width = 3,
-    indent_markers = {
-      enable = true,
-      inline_arrows = true,
       icons = {
-        corner = "└",
-        edge = "│",
-        item = "│",
-        bottom = "─",
-        none = " ",
-      },
-    },
-    icons = {
       webdev_colors = true,
       modified_placement = "after",
       symlink_arrow = " ➛ ",

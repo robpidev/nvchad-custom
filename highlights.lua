@@ -37,9 +37,9 @@ M.override = {
     CmpItemAbbrMatch = {
     fg = "#8964d8",
   },
-  -- NvimTreeFolderIcon = {
-  --   fg = "#aa76ff",
-  -- },
+  NvimTreeFolderIcon = {
+    fg = "#8964d8",
+  },
   CmpItemKindModule = {
     fg = "orange"
   },
