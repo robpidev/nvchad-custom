@@ -54,6 +54,15 @@ M.override = {
   },
   CmpItemKindMethod = {
     fg = "blue"
+  },
+  NvimTreeGitNew = {
+    fg = "green"
+  },
+  NvimTreeGitIgnored = {
+    fg = "#54575d"
+  },
+  NvimTreeGitDirty = {
+    fg = "orange"
   }
 }
 
