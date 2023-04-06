@@ -56,13 +56,16 @@ M.override = {
     fg = "blue"
   },
   NvimTreeGitNew = {
-    fg = "green"
+    fg = "teal"
   },
   NvimTreeGitIgnored = {
     fg = "#54575d"
   },
   NvimTreeGitDirty = {
     fg = "orange"
+  },
+  NvimTreeGitStaged = {
+    fg = "purple"
   }
 }
 
