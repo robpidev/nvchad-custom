@@ -11,6 +11,7 @@ M.override = {
     -- bg = "#24222d",
     -- bg = "#272630"
     bg = "#292630"
+    -- bg = "black2"
   },
   Comment = {
     italic = true,
