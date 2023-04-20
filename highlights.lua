@@ -63,18 +63,18 @@ M.override = {
     fg = "#54575d"
   },
   NvimTreeGitDirty = {
-    fg = "orange"
+    fg = "red"
   },
-  NvimTreeGitStaged = {
-    fg = "purple"
-  }
 }
-
-
 
 ---@type HLTable
 M.add = {
-  NvimTreeOpenedFolderName = { fg = "green", bold = true },
+  NvimTreeOpenedFolderName = {
+    fg = "green", bold = true
+  },
+  NvimTreeGitStaged = {
+    fg = "orange"
+  }
 }
 
 return M
