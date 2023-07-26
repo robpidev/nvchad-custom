@@ -9,8 +9,8 @@ local servers = {
   "tsserver",
   "clangd",
   "rust_analyzer",
-  -- "pylsp",
-  "pyright",
+  "pylsp",
+  -- "pyright",
 }
 
 for _, lsp in ipairs(servers) do
@@ -20,19 +20,19 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-lspconfig.pyright.setup{
-  settings = {
-    python = {
-      analysis = {
-        autoSearchPaths = true,
-        diagnosticMode = "workspace",
-        useLibraryCodeForTypes = true,
-        typeCheckingMode = "off"
-      }
-    }
-  }
-}
-
+-- lspconfig.pyright.setup{
+--   settings = {
+--     python = {
+--       analysis = {
+--         -- autoSearchPaths = true,
+--         -- diagnosticMode = "workspace",
+--         -- useLibraryCodeForTypes = true,
+--         typeCheckingMode = "off"
+--       }
+--     }
+--   }
+-- }
+--
 
 -- 
 -- lspconfig.pyright.setup { blabla}

@@ -57,6 +57,14 @@ local plugins = {
     end,
   },
 
+  -- Rust tools
+  {
+    "simrat39/rust-tools.nvim",
+    config = function()
+      require("rust-tools").setup()
+    end,
+  }
+
    -- To make a plugin not be loaded
 
   -- debudg

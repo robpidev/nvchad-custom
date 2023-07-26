@@ -15,6 +15,7 @@ M.ui = {
     lspkind_text = false,
   },
 }
+
 M.plugins = "custom.plugins"
 
 -- check core.mappings for table structure

@@ -2,15 +2,15 @@
 -- Each highlight group can take a table with variables fg, bg, bold, italic, etc
 -- base30 variable names can also be used as colors
 
-
 local M = {}
 
 ---@type Base46HLGroupsList
 M.override = {
   CursorLine = {
-    -- bg = "#24222d",
+    bg = "#24222d",
     -- bg = "#272630"
-    bg = "#292630"
+    -- bg = "#292630"
+    -- bg = "#171820"
     -- bg = "black2"
   },
   Comment = {
@@ -30,6 +30,12 @@ M.override = {
   },
   ["@operator"] = {
     fg = "cyan"
+  },
+  ["@symbol"] = {
+    italic = true
+  },
+  Conditional = {
+    italic = true
   },
   PmenuSel = {
     bg = "#8964d8",
@@ -65,6 +71,9 @@ M.override = {
   NvimTreeGitDirty = {
     fg = "red"
   },
+  CmpDoc = {
+    bg = "NONE"
+  }
 }
 
 ---@type HLTable
@@ -74,7 +83,7 @@ M.add = {
   },
   NvimTreeGitStaged = {
     fg = "orange"
-  }
+  },
 }
 
 return M
