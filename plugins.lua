@@ -61,22 +61,30 @@ local plugins = {
   {
     "simrat39/rust-tools.nvim",
     config = function()
-      require("rust-tools").setup()
+      require("custom.configs.rust-tools")
     end,
-  }
+  },
 
    -- To make a plugin not be loaded
 
   -- debudg
-  -- {
-  --   "mfussenegger/nvim-dap",
-  --   dependencies = {
-  --     "the"
-  --   },
-  --   config = function ()
-  --     require "custom.configs.nvim-dap"
-  --   end
-  -- }
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "the"
+    },
+    config = function ()
+      require "custom.configs.nvim-dap"
+    end
+  },
+
+  {
+    "Pocco81/DAPInstall.nvim",
+  },
+
+  {
+    "nvim-lua/plenary.nvim",
+  }
   -- {
   --   "NvChad/nvim-colorizer.lua",
   --   enabled = false

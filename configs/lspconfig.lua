@@ -11,6 +11,8 @@ local servers = {
   "rust_analyzer",
   "pylsp",
   -- "pyright",
+  "svelte",
+  "html",
 }
 
 for _, lsp in ipairs(servers) do
