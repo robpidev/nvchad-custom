@@ -66,6 +66,13 @@ local plugins = {
   },
 
    -- To make a plugin not be loaded
+  -- Color picker
+  {
+    "ziontee113/color-picker.nvim",
+    config = function()
+      require("custom.configs.picker")
+    end,
+  },
 
   -- debudg
   {

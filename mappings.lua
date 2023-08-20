@@ -8,9 +8,12 @@ M.general = {
   },
 
   i = {
+    ["<C-q>"] = {"<Esc>:q<CR>", "Quit nvim"},
     ["<C-s>"] = {"<Esc>:w<CR>a", "Save on insert mode"}
   }
 }
+
+
 -- more keybinds!
 
 return M
