@@ -36,6 +36,10 @@ local plugins = {
       end
     }
   },
+  {
+    "NvChad/nvterm",
+    opts = overrides.nvterm,
+  },
 
   {
     "nvim-tree/nvim-tree.lua",
@@ -91,7 +95,8 @@ local plugins = {
 
   {
     "nvim-lua/plenary.nvim",
-  }
+  },
+
   -- {
   --   "NvChad/nvim-colorizer.lua",
   --   enabled = false

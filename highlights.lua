@@ -34,6 +34,12 @@ M.override = {
   ["@symbol"] = {
     italic = true
   },
+  ["@field"] = {
+    fg = "#b2ccd6"
+  },
+  ["@field.key"] = {
+    fg = "#f78c6c"
+  },
   Conditional = {
     italic = true
   },
@@ -41,7 +47,7 @@ M.override = {
     bg = "#8964d8",
     fg = "#ffffff"
   },
-    CmpItemAbbrMatch = {
+  CmpItemAbbrMatch = {
     fg = "#8964d8",
   },
   NvimTreeFolderIcon = {
@@ -73,7 +79,14 @@ M.override = {
   },
   CmpDoc = {
     bg = "NONE"
-  }
+  },
+  PreProc = {
+    fg = "#ef7178"
+  },
+  Include = {
+    -- fg = "#c79bf4",
+    italic = true,
+  },
 }
 
 ---@type HLTable
@@ -84,6 +97,7 @@ M.add = {
   NvimTreeGitStaged = {
     fg = "orange"
   },
+  prepro = {}
 }
 
 return M

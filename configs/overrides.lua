@@ -6,7 +6,7 @@ M.treesitter = {
     "lua",
     "html",
     "css",
-    "javascript",
+    -- "javascript",
     "c",
     "markdown",
     "markdown_inline",
@@ -69,6 +69,14 @@ M.nvimtree = {
   },
 }
 
+M.nvterm = {
+    terminals = {
+      shell = "pwsh",
+      type_opts = {
+        border = "none"
+      }
+    }
+}
 
 M.cmp = {
   formatting = {
