@@ -13,7 +13,8 @@ local servers = {
   -- "pyright",
   "svelte",
   "html",
-  "lua_ls"
+  "lua_ls",
+  "bashls"
 }
 
 for _, lsp in ipairs(servers) do
