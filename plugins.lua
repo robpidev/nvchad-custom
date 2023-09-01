@@ -78,23 +78,26 @@ local plugins = {
     end,
   },
 
+  -- Multi cursor
+  {
+    "mg979/vim-visual-multi",
+    lazy = false,
+  },
   -- debudg
   {
     "mfussenegger/nvim-dap",
     dependencies = {
-      "the"
+      {
+        "Pocco81/DAPInstall.nvim",
+      },
+
+      {
+        "nvim-lua/plenary.nvim",
+      },
     },
     config = function ()
       require "custom.configs.nvim-dap"
     end
-  },
-
-  {
-    "Pocco81/DAPInstall.nvim",
-  },
-
-  {
-    "nvim-lua/plenary.nvim",
   },
 
   -- {
