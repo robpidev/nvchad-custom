@@ -4,7 +4,7 @@
 
 local M = {}
 
----@type Base46HLGroupsList
+-- @type Base46HLGroupsList
 M.override = {
   CursorLine = {
     bg = "#24222d",
@@ -15,6 +15,9 @@ M.override = {
   },
   Comment = {
     italic = true,
+  },
+  FloatBorder = {
+    fg = "dark_purple",
   },
   ["@keyword"] = {
     italic = true,
@@ -87,9 +90,19 @@ M.override = {
     -- fg = "#c79bf4",
     italic = true,
   },
+  ["@property"] = {
+    fg = "#b2ccd6",
+    -- bg = "red"
+  },
+  Variable = {
+    fg = "#eeefff"
+  },
+  Number = {
+    fg = "#f78c55"
+  },
 }
 
----@type HLTable
+-- @type HLTable
 M.add = {
   NvimTreeOpenedFolderName = {
     fg = "green", bold = true
@@ -97,7 +110,9 @@ M.add = {
   NvimTreeGitStaged = {
     fg = "orange"
   },
-  prepro = {}
+  cssAttr = {
+    fg = "red";
+  }
 }
 
 return M

@@ -1,4 +1,4 @@
----@type ChadrcConfig
+-- @type ChadrcConfig
 local M = {}
 
 -- Path to overriding theme and highlights files
@@ -10,10 +10,17 @@ M.ui = {
   theme = "ayu_dark",
   transparency = true,
   cmp = {
-    -- border_color = "dark_purple",
+    border_color = "dark_purple",
     style = "default",
     lspkind_text = false,
   },
+  changed_themes = {
+    ayu_dark = {
+      base_30 = {
+        white = "#eeefff",
+      }
+    }
+  }
 }
 
 M.plugins = "custom.plugins"
