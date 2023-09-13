@@ -79,6 +79,9 @@ M.nvterm = {
 }
 
 M.cmp = {
+  sources = {
+    { name = 'emoji'}
+  },
   formatting = {
     -- fields = { "kind", "abbr", "menu" },
   },

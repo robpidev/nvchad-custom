@@ -1,8 +1,21 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
----@type NvPluginSpec[]
+-- @type NvPluginSpec[]
 local plugins = {
   -- Override plugin definition options
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    },
+    config = function ()
+      require "custom.configs.neo-tree"
+    end,
+    lazy = false,
+  },
 
   {
     "neovim/nvim-lspconfig",
@@ -23,18 +36,18 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = overrides.treesitter,
     dependencies = {
-    -- bracket colorizer
+      -- bracket colorizer
       "p00f/nvim-ts-rainbow",
-      config = function ()
+      config = function()
         require "custom.configs.rainbow"
-      end
-    }
+      end,
+    },
   },
   {
     "NvChad/nvterm",
@@ -48,9 +61,11 @@ local plugins = {
 
   {
     "hrsh7th/nvim-cmp",
+    dependencies = {
+      "hrsh7th/cmp-emoji",
+    },
     opts = overrides.cmp,
   },
-
 
   -- Install a plugin
   {
@@ -65,16 +80,16 @@ local plugins = {
   {
     "simrat39/rust-tools.nvim",
     config = function()
-      require("custom.configs.rust-tools")
+      require "custom.configs.rust-tools"
     end,
   },
 
-   -- To make a plugin not be loaded
+  -- To make a plugin not be loaded
   -- Color picker
   {
     "ziontee113/color-picker.nvim",
     config = function()
-      require("custom.configs.picker")
+      require "custom.configs.picker"
     end,
   },
 
@@ -95,9 +110,9 @@ local plugins = {
         "nvim-lua/plenary.nvim",
       },
     },
-    config = function ()
+    config = function()
       require "custom.configs.nvim-dap"
-    end
+    end,
   },
 
   -- {
@@ -111,6 +126,5 @@ local plugins = {
   --   enabled = true,
   -- },
 }
-
 
 return plugins

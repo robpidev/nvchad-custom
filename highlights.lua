@@ -21,34 +21,34 @@ M.override = {
   },
   ["@keyword"] = {
     italic = true,
-    fg = "purple"
+    fg = "purple",
   },
   ["@keyword.function"] = {
     italic = true,
-    fg = "purple"
+    fg = "purple",
   },
   ["@keyword.return"] = {
     italic = true,
-    fg = "purple"
+    fg = "purple",
   },
   ["@operator"] = {
-    fg = "cyan"
+    fg = "cyan",
   },
   ["@symbol"] = {
-    italic = true
+    italic = true,
   },
   ["@field"] = {
-    fg = "#b2ccd6"
+    fg = "#b2ccd6",
   },
   ["@field.key"] = {
-    fg = "#f78c6c"
+    fg = "#f78c6c",
   },
   Conditional = {
-    italic = true
+    italic = true,
   },
   PmenuSel = {
     bg = "#8964d8",
-    fg = "#ffffff"
+    fg = "#ffffff",
   },
   CmpItemAbbrMatch = {
     fg = "#8964d8",
@@ -57,34 +57,34 @@ M.override = {
     fg = "#8964d8",
   },
   CmpItemKindModule = {
-    fg = "orange"
+    fg = "orange",
   },
   CmpItemKindSnippet = {
-    fg = "teal"
+    fg = "teal",
   },
   CmpItemKindVariable = {
-    fg = "pink"
+    fg = "pink",
   },
   CmpItemKindFunction = {
-    fg = "blue"
+    fg = "blue",
   },
   CmpItemKindMethod = {
-    fg = "blue"
+    fg = "blue",
   },
   NvimTreeGitNew = {
-    fg = "teal"
+    fg = "teal",
   },
   NvimTreeGitIgnored = {
-    fg = "#54575d"
+    fg = "#54575d",
   },
   NvimTreeGitDirty = {
-    fg = "red"
+    fg = "red",
   },
   CmpDoc = {
-    bg = "NONE"
+    bg = "NONE",
   },
   PreProc = {
-    fg = "#ef7178"
+    fg = "#ef7178",
   },
   Include = {
     -- fg = "#c79bf4",
@@ -95,24 +95,28 @@ M.override = {
     -- bg = "red"
   },
   Variable = {
-    fg = "#eeefff"
+    fg = "#eeefff",
   },
   Number = {
-    fg = "#f78c55"
+    fg = "#f78c55",
   },
 }
 
 -- @type HLTable
 M.add = {
   NvimTreeOpenedFolderName = {
-    fg = "green", bold = true
+    fg = "green",
+    bold = true,
   },
   NvimTreeGitStaged = {
-    fg = "orange"
+    fg = "orange",
   },
-  cssAttr = {
-    fg = "red";
-  }
+  NeoTreeDirectoryIcon = {
+    fg = "#8964d8",
+  },
+  NeoTreeDirectoryName = {
+    fg = "#8964d8",
+  },
 }
 
 return M

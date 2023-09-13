@@ -1,10 +1,11 @@
----@type MappingsTable
+-- @type MappingsTable
 local M = {}
 
 M.general = {
   n = {
-    ["<C-q>"] = {":q<CR>", "Quit nvim"},
-    ["<C-S-q>"] = {":q!<CR>", "Quit force nvim"},
+    ["<C-q>"] = {":qall!<CR>", "Quit nvim"},
+    -- ["<C-S-q>"] = {":qall!<CR>", "Quit force nvim"},
+    -- ["<C-n>"] = {":Neotree toggle<CR>"}
   },
 
   i = {
