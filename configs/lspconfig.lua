@@ -14,7 +14,7 @@ local servers = {
   "svelte",
   "html",
   "lua_ls",
-  "bashls"
+  "bashls",
 }
 
 for _, lsp in ipairs(servers) do
@@ -38,5 +38,5 @@ end
 -- }
 --
 
--- 
+--
 -- lspconfig.pyright.setup { blabla}

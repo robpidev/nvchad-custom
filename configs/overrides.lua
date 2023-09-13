@@ -14,7 +14,7 @@ M.treesitter = {
   indent = {
     enable = true,
     disable = {
-      "python"
+      "python",
     },
   },
 }
@@ -45,7 +45,7 @@ M.nvimtree = {
       enable = true,
       icons = {
         item = "├",
-      }
+      },
     },
     icons = {
       padding = " ",
@@ -54,36 +54,48 @@ M.nvimtree = {
       git_placement = "after",
       show = {
         folder_arrow = false,
-        git = true
+        git = true,
       },
       symlink_arrow = " ➛ ",
       glyphs = {
         folder = {
           default = "",
-          open  = "",
+          open = "",
           empty = "",
-          empty_open = ""
+          empty_open = "",
         },
-      }
+      },
     },
   },
 }
 
 M.nvterm = {
-    terminals = {
-      -- shell = "pwsh",
-      type_opts = {
-        border = "none"
-      }
-    }
+  terminals = {
+    -- shell = "pwsh",
+    type_opts = {
+      border = "none",
+    },
+  },
 }
 
 M.cmp = {
+  PreselectMode = { "none" },
   sources = {
-    { name = 'emoji'}
+    { name = "emoji" },
+    { name = "nvim_lsp" },
+    { name = "nvim_lua" },
+    { name = "buffer" },
+    { name = "path" },
+    { name = "luasnip" },
+  },
+  -- nvim-cmp max rows 5 and enable scroll_bar
+  window = {
+    completion = {
+      scrollbar = true,
+    },
   },
   formatting = {
-    -- fields = { "kind", "abbr", "menu" },
+    -- fields = { "abbr", "kind", "abbr", "menu" },
   },
 }
 

@@ -4,6 +4,20 @@ local overrides = require "custom.configs.overrides"
 local plugins = {
   -- Override plugin definition options
   {
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
+  },
+
+  -- animation identation
+  {
+    "echasnovski/mini.indentscope",
+    lazy = false,
+    opts = {
+      symbol = "│",
+      options = { try_as_border = true },
+    },
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     dependencies = {
@@ -11,7 +25,7 @@ local plugins = {
       "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
     },
-    config = function ()
+    config = function()
       require "custom.configs.neo-tree"
     end,
     lazy = false,
@@ -29,7 +43,7 @@ local plugins = {
       },
     },
     config = function()
-      require "plugins.configs.lspconfig"
+      -- require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end, -- Override to setup mason-lspconfig
   },

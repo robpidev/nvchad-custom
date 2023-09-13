@@ -1,11 +1,11 @@
-local neo = require("neo-tree")
+local neo = require "neo-tree"
 
-neo.setup({
+neo.setup {
   default_component_configs = {
     icon = {
       folder_closed = "",
       folder_open = "",
       folder_empty = "",
-    }
-  }
-})
+    },
+  },
+}

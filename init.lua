@@ -15,5 +15,6 @@ augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * if &nu | set rnu   | endif
   autocmd BufLeave,FocusLost,InsertEnter  * if &nu | set nornu | endif
+  autocmd BufWritePre * lua vim.lsp.buf.format()
 augroup END
 ]])
