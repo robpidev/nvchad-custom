@@ -33,6 +33,7 @@ local plugins = {
 
   {
     "neovim/nvim-lspconfig",
+    opts = overrides.lspconfig,
     dependencies = {
       -- format & linting
       {
@@ -93,6 +94,10 @@ local plugins = {
   -- Rust tools
   {
     "simrat39/rust-tools.nvim",
+    dependencies = {
+      -- "nvim-lua/plenary.nvim",
+      -- "mfussenegger/nvim-dap",
+    },
     config = function()
       require "custom.configs.rust-tools"
     end,
@@ -114,24 +119,24 @@ local plugins = {
   },
   -- debudg
   {
-    "mfussenegger/nvim-dap",
+    "rcarriga/nvim-dap-ui",
+    config = function()
+      require("dapui").setup()
+    end,
     dependencies = {
       {
-        "Pocco81/DAPInstall.nvim",
+        "mfussenegger/nvim-dap",
+        config = function()
+          require "custom.configs.nvim-dap"
+        end,
       },
-
-      {
-        "nvim-lua/plenary.nvim",
-      },
+      "nvim-lua/plenary.nvim",
     },
-    config = function()
-      require "custom.configs.nvim-dap"
-    end,
+    lazy = false,
   },
-
   -- {
   --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
+  --   enabled = false,
   -- },
 
   -- Uncomment if you want to re-enable which-key

@@ -19,6 +19,12 @@ M.treesitter = {
   },
 }
 
+M.lspconfig = {
+  inlay_hints = {
+    enable = true,
+  },
+}
+
 M.mason = {
   ensure_installed = {
     -- lua stuff
