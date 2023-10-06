@@ -1,5 +1,6 @@
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
+local util = require "lspconfig/util"
 
 local lspconfig = require "lspconfig"
 -- if you just want default config for the servers then put them in a table
@@ -8,7 +9,7 @@ local servers = {
   "cssls",
   "tsserver",
   "clangd",
-  "rust_analyzer",
+  -- "rust_analyzer",
   "pylsp",
   -- "pyright",
   "svelte",

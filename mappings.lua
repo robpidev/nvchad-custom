@@ -10,6 +10,18 @@ M.general = {
     -- ["<C-S-q>"] = {":qall!<CR>", "Quit force nvim"},
     -- ["<C-n>"] = { ":Neotree toggle<CR>" },
     -- dap
+  },
+
+  i = {
+    ["<C-q>"] = { "<Esc>:q<CR>", "Quit nvim" },
+    ["<C-s>"] = { "<Esc>:w<CR>a", "Save on insert mode" },
+  },
+}
+
+-- more keybinds!
+--
+M.dap = {
+  n = {
     ["<leader>db"] = { ":lua require'dap'.toggle_breakpoint()<CR>", "Toggle breakpoint" },
     ["<leader>dc"] = { ":lua require'dap'.continue()<CR>", "Continue" },
     ["<leader>di"] = { ":lua require'dap'.step_into()<CR>", "Step into" },
@@ -25,13 +37,14 @@ M.general = {
     ["<leader>de"] = { ":lua require'dapui'.eval()<CR>", "Eval" },
     ["<leader>du"] = { ":lua require'dapui'.toggle()<CR>", "Toggle UI" },
   },
-
-  i = {
-    ["<C-q>"] = { "<Esc>:q<CR>", "Quit nvim" },
-    ["<C-s>"] = { "<Esc>:w<CR>a", "Save on insert mode" },
-  },
 }
 
--- more keybinds!
+M.rust = {
+  n = {
+    ["<leader>rr"] = { ":RustRun<CR>", "Run" },
+    ["<leader>rc"] = { ":RustCheck<CR>", "Check" },
+    ["<leader>rd"] = { ":RustDebuggables<CR>", "Debug" },
+  },
+}
 
 return M
