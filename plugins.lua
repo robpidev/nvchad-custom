@@ -58,7 +58,7 @@ local plugins = {
     opts = overrides.treesitter,
     dependencies = {
       -- bracket colorizer
-      "p00f/nvim-ts-rainbow",
+      "HiPhish/rainbow-delimiters.nvim",
       config = function()
         require "custom.configs.rainbow"
       end,
