@@ -12,15 +12,15 @@ M.ui = {
   cmp = {
     border_color = "dark_purple",
     style = "default",
-    lspkind_text = false,
+    lspkind_text = true,
   },
-  changed_themes = {
-    ayu_dark = {
-      base_30 = {
-        white = "#eeefff",
-      }
-    }
-  }
+  -- changed_themes = {
+  --   bearded_arc = {
+  --     base_30 = {
+  --       white = "#eeefff",
+  --     },
+  --   },
+  -- },
 }
 
 M.plugins = "custom.plugins"
@@ -29,6 +29,5 @@ M.plugins = "custom.plugins"
 M.mappings = require "custom.mappings"
 
 -- Icons
-
 
 return M
