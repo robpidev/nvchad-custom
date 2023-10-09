@@ -28,7 +28,7 @@ local plugins = {
     config = function()
       require "custom.configs.neo-tree"
     end,
-    lazy = false,
+    -- lazy = false,
   },
 
   {
@@ -44,7 +44,7 @@ local plugins = {
       },
     },
     config = function()
-      -- require "plugins.configs.lspconfig"
+      require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end, -- Override to setup mason-lspconfig
   },
@@ -58,7 +58,7 @@ local plugins = {
     opts = overrides.treesitter,
     dependencies = {
       -- bracket colorizer
-      "p00f/nvim-ts-rainbow",
+      "HiPhish/rainbow-delimiters.nvim",
       config = function()
         require "custom.configs.rainbow"
       end,
@@ -95,12 +95,19 @@ local plugins = {
   {
     "simrat39/rust-tools.nvim",
     dependencies = {
-      -- "nvim-lua/plenary.nvim",
-      -- "mfussenegger/nvim-dap",
+      "neovim/nvim-lspconfig",
     },
-    config = function()
-      require "custom.configs.rust-tools"
+    ft = "rust",
+    opts = function()
+      return require "custom.configs.rust-tools"
     end,
+    -- dependencies = {
+    --   -- "nvim-lua/plenary.nvim",
+    --   -- "mfussenegger/nvim-dap",
+    -- },
+    -- config = function()
+    --   require "custom.configs.rust-tools"
+    -- end,
   },
 
   -- To make a plugin not be loaded

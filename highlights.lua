@@ -117,6 +117,17 @@ M.add = {
   NeoTreeDirectoryName = {
     fg = "#8964d8",
   },
+
+  -- Rainabow
+  RainbowDelimiterYellow = { fg = "#fdb61d" },
+  RainbowDelimiterPurple = { fg = "#ee62f0" },
+  RainbowDelimiterRed = { fg = "#ed588a" },
+  RainbowDelimiterBlue = { fg = "#6179e2" },
+  RainbowDelimiterGreen = { fg = "#54ea8d" },
+  RainbowDelimiterOrange = { fg = "#f67535" },
+  RainbowDelimiterGray = { fg = "#68a0b0" },
+  RainbowDelimiterviolet = { fg = "#946eaD" },
+  RainbowDelimiterMoon = { fg = "#c4aA6D" },
 }
 
 return M
