@@ -77,7 +77,7 @@ M.nvimtree = {
 
 M.nvterm = {
   terminals = {
-    shell = "pwsh",
+    -- shell = "pwsh",
     type_opts = {
       border = "none",
     },
