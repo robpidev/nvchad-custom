@@ -8,7 +8,8 @@ M.general = {
     ["<leader>qq"] = { ":qall!<CR>", "Quit nvim" },
     ["<C-q>"] = { ":q<CR>", "Quit nvim" },
     -- ["<C-S-q>"] = {":qall!<CR>", "Quit force nvim"},
-    -- ["<C-n>"] = { ":Neotree toggle<CR>" },
+    ["<leader>e"] = { ":Neotree toggle<CR>" },
+    ["<C-n>"] = { ":Neotree toggle<CR>" },
     -- dap
   },
 

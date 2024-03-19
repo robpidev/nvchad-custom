@@ -28,7 +28,7 @@ local plugins = {
     config = function()
       require "custom.configs.neo-tree"
     end,
-    -- lazy = false,
+    lazy = false,
   },
 
   {
